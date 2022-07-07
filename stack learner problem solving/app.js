@@ -21,12 +21,22 @@
 
 //---------------Solve 2 ---------------//
 
-function sum(m, n) {
-  let result = 0
-  for(let i = m; i<= n; i++) {
-  result += i;
-  }
-  return result
- }
- console.log(sum(1, 10)); 
+// function sum(m, n) {
+//   let result = 0
+//   for(let i = m; i<= n; i++) {
+//   result += i;
+//   }
+//   return result
+//  }
+//  console.log(sum(1, 10)); 
 
+/*
+ Day 03 ----->>> Write a function that takes base and height of a triangle and return its area.
+*/
+
+function areaOfTriangle(base, height) {
+  var area =(base * height) / 2;
+  var result = `triangle base is ${base} meter and height is ${height} meter. Area of triangle is ${area} meter square.`
+  console.log(result)
+}
+areaOfTriangle(7, 4);
