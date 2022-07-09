@@ -34,9 +34,32 @@
  Day 03 ----->>> Write a function that takes base and height of a triangle and return its area.
 */
 
-function areaOfTriangle(base, height) {
-  var area =(base * height) / 2;
-  var result = `triangle base is ${base} meter and height is ${height} meter. Area of triangle is ${area} meter square.`
-  console.log(result)
+// function areaOfTriangle(base, height) {
+//   var area =(base * height) / 2;
+//   var result = `triangle base is ${base} meter and height is ${height} meter. Area of triangle is ${area} meter square.`
+//   console.log(result)
+// }
+// areaOfTriangle(7, 4);
+
+/*
+ Day 04 ----->>> Write a function that takes a word and returns the new word without including the first two characters.
+*/
+
+// function stringRemove(str) {
+// return str.substring(2)
+// }
+// console.log(stringRemove('hello'))
+
+
+/*
+ Day 05 ----->>> Write a function that takes a word and returns the new word without including the first two characters.
+*/
+let myArr = [5, 6, 3, 9, 4, 7]
+function newArr(arr) {
+  let newArr = [];
+  let firstArr = arr[0];
+  let secondArr = arr[arr.length - 1];
+  return newArr += [[firstArr], [secondArr]]
 }
-areaOfTriangle(7, 4);
+
+console.log(newArr(myArr))
