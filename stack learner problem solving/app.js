@@ -52,14 +52,50 @@
 
 
 /*
- Day 05 ----->>> Write a function that takes a word and returns the new word without including the first two characters.
+ Day 05 ----->>> Write a function that takes an array and return the first and last elements as a new array.
 */
-let myArr = [5, 6, 3, 9, 4, 7]
-function newArr(arr) {
-  let newArr = [];
-  let firstArr = arr[0];
-  let secondArr = arr[arr.length - 1];
-  return newArr += [[firstArr], [secondArr]]
+// let myArr = [5, 6, 3, 9, 4, 7]
+// function newArr(arr) {
+//   let newArr = [];
+//   let firstArr = arr[0];
+//   let secondArr = arr[arr.length - 1];
+//   return newArr += [[firstArr], [secondArr]]
+// }
+
+// console.log(newArr(myArr))
+
+/*
+ Day 06 ----->>> Write a function that takes an array and return a reverse array.
+
+ Note: The function cannot change the main array, and you cannot use any array methods.
+*/
+
+//---------------Solve 1 ---------------//
+
+// let myArr = [6, 8, 3, 9, 5, 3, 35, 9, 5];
+// function arrReverse(arr) {
+//   let newArr = [];
+//   for(let i = 0; i < arr.length; i++) {
+//     newArr[i] = arr[arr.length - i - 1];
+//   }
+//   return newArr;
+// }
+
+
+// console.log(arrReverse(myArr))
+// console.log(myArr)
+
+//---------------Solve 2 ---------------//
+
+let exampleArray = [1, 3, 6, 4, 8, 4, 7];
+let finalArray = [];
+
+function reverseArrFunc(inputArray) {
+  for (let i = inputArray.length -1; i>= 0; i--) {
+    finalArray[finalArray.length] = (inputArray[i]);
+  }
 }
 
-console.log(newArr(myArr))
+reverseArrFunc(exampleArray);
+console.log(' reverse array : ', finalArray)
+console.log(' main array : ', exampleArray)
